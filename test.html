@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础文本样式展示页</title>
+    <style>
+        /* 基础样式重置与全局设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'SimSun', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        /* 标题样式 */
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin: 35px 0 20px;
+            padding-left: 15px;
+            border-left: 4px solid #3498db;
+        }
+        /* 文本样式类 */
+        .bold {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .italic {
+            font-style: italic;
+            color: #9b59b6;
+        }
+        .underline {
+            text-decoration: underline;
+            color: #27ae60;
+        }
+        .line-through {
+            text-decoration: line-through;
+            color: #7f8c8d;
+        }
+        .text-large {
+            font-size: 1.5em;
+        }
+        .text-small {
+            font-size: 0.8em;
+        }
+        .text-center {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .text-right {
+            text-align: right;
+            margin: 20px 0;
+        }
+        /* 段落与容器样式 */
+        .content-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        p {
+            margin-bottom: 18px;
+            text-indent: 2em; /* 中文段落首行缩进 */
+        }
+        /* 列表样式 */
+        ul, ol {
+            margin: 20px 0 20px 4em;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        /* 引用样式 */
+        blockquote {
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 25px 0;
+            background-color: #f0f7ff;
+            font-style: italic;
+        }
+        /* 强调框样式 */
+        .highlight-box {
+            border: 1px dashed #e67e22;
+            padding: 20px;
+            margin: 30px 0;
+            background-color: #fff8f0;
+        }
+        .highlight-box p {
+            text-indent: 0;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- 页面标题 -->
+<h1>中文文本样式与布局展示</h1>
+
+<!-- 基础文本样式区域 -->
+<div class="content-section">
+    <h2>一、基础文本样式</h2>
+    <p>这是默认中文文本，采用宋体（SimSun）字体，行高1.8，首行缩进2字符，符合中文阅读习惯。</p>
+    <p class="bold">这是粗体文本（bold类）：不仅字体加粗，还添加了红色高亮，用于强调关键信息。</p>
+    <p class="italic">这是斜体文本（italic类）：字体倾斜，搭配紫色，适合引用或特殊说明内容。</p>
+    <p class="underline">这是下划线文本（underline类）：添加下划线装饰，使用绿色，常用于标注重点词汇。</p>
+    <p class="line-through">这是删除线文本（line-through类）：添加删除线，使用灰色，适合表示作废或修改前的内容。</p>
+    <p class="text-large">这是大号文本（text-large类）：字体大小为默认的1.5倍，用于需要突出的标题性内容。</p>
+    <p class="text-small">这是小号文本（text-small类）：字体大小为默认的0.8倍，适合备注、说明等辅助信息。</p>
+</div>
+
+<!-- 文本对齐与引用区域 -->
+<div class="content-section">
+    <h2>二、文本对齐与引用</h2>
+    <p class="text-center">这是居中对齐文本（text-center类）：常用于标题、标语等需要居中展示的内容，提升页面平衡感。</p>
+    <p class="text-right">这是右对齐文本（text-right类）：适合日期、签名、备注等需要靠右排列的信息，符合阅读逻辑。</p>
+    <p>以下是一段引用内容，使用blockquote标签和自定义样式，模拟书籍摘录效果：</p>
+    <blockquote>
+        读书破万卷，下笔如有神。——杜甫《奉赠韦左丞丈二十二韵》<br>
+        这句话强调了积累阅读量对写作能力的重要性，是中国文学史上关于学习方法的经典名句。
+    </blockquote>
+</div>
+
+<!-- 列表与强调框区域 -->
+<div class="content-section">
+    <h2>三、列表与强调区域</h2>
+    <p>以下是无序列表（ul），用于展示并列的非顺序性内容：</p>
+    <ul>
+        <li>中文文本排版核心原则：清晰、易读、符合阅读习惯</li>
+        <li>常用中文字体：宋体（SimSun）、黑体（SimHei）、微软雅黑（Microsoft YaHei）</li>
+        <li>文本样式设计要点：避免过多颜色堆砌，重点突出即可</li>
+    </ul>
+
+    <p>以下是有序列表（ol），用于展示有逻辑顺序的内容：</p>
+    <ol>
+        <li>确定页面核心内容，明确文本层级（标题、正文、备注）</li>
+        <li>设置基础样式（字体、行高、颜色），保证阅读舒适度</li>
+        <li>添加辅助样式（对齐、强调、引用），提升信息区分度</li>
+        <li>优化响应式布局，适配不同设备屏幕</li>
+    </ol>
+
+    <!-- 强调框组件 -->
+    <div class="highlight-box">
+        <p><span class="bold">注意事项：</span></p>
+        <p>1. 中文文本建议首行缩进2字符，避免与英文排版混淆；</p>
+        <p>2. 行高设置在1.6-1.8之间，可减少阅读疲劳；</p>
+        <p>3. 颜色搭配需遵循对比度标准，确保视觉障碍用户也能正常阅读。</p>
+    </div>
+</div>
+
+<!-- 底部信息区域 -->
+<div class="content-section text-center">
+    <p class="text-small">© 2024 中文文本样式展示页 | 基于HTML+CSS构建</p>
+</div>
+</body>
+</html>
